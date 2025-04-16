@@ -1,8 +1,6 @@
 <div class="card">
-    <div class="title">
-        <h3>Add Contact</h3>
-    </div>
-    
+        <h3 class="card-title">Add Contact</h3>
+    <div class="card-body">
         <div>
             <label for="firstname">First Name</label>
             <br>
@@ -24,9 +22,8 @@
             <input type="text" id="number" class="form-control" [(ngModel)]="email">
         </div>
         <div>
-            <button type="button" class="btn btn-primary rounded-pill" (click)="addContact()" routerLink="">Add</button>
-            <button type="button" class="btn btn-primary rounded-pill" routerLink="">Cancel</button>
+            <button type="button" class="btn btn-info" (click)="addContact()" routerLink="">Add</button>
+            <button type="button" class="btn btn-warning" routerLink="">Cancel</button>
         </div>
-    
-    
+    </div>     
 </div>
