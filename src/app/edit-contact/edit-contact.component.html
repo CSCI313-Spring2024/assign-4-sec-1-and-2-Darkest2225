@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="title">
+        <h3>Edit Contact</h3>
+    </div>
+    
+        <div>
+            <label for="firstname">First Name</label>
+            <br>
+            <input id="firstname" type="text" class="form-control" [(ngModel)]="firstname">
+        </div>
+        <div>
+            <label for="lastname">Last Name</label>
+            <br>
+            <input type="text" id="lastname" class="form-control" [(ngModel)]="lastname">
+        </div>
+        <div>
+            <label for="number">Phone Number</label>
+            <br>
+            <input type="text" id="number" class="form-control" [(ngModel)]="number">
+        </div>
+        <div>
+            <label for="number">Email</label>
+            <br>
+            <input type="text" id="number" class="form-control" [(ngModel)]="email">
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary rounded-pill" (click)="editContact()" routerLink="">Edit</button>
+            <button type="button" class="btn btn-primary rounded-pill" routerLink="">Cancel</button>
+        </div>
+    
+    
+</div>

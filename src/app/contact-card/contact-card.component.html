@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-body">
+        <h2>Name: {{ contact.firstname }} {{ contact.lastname }}</h2>
+        <p>Phone Number: {{ contact.number }}</p>
+        <p>ESnail: {{ contact.email }}</p>
+        <hr>
+        <div>
+            <button class="btn btn-primary rounded-pill" [routerLink]="['edit', index]" >Edit</button>
+            <button class="btn btn-primary rounded-pill" (click)="delete()">Delete</button>
+        </div>
+    </div>
+</div>
